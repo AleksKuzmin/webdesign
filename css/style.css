@@ -15,15 +15,15 @@ body {
 
 .container {
   display: grid;
-  grid-template-columns: 310px 310px 310px;
-  grid-template-rows: 340px 340px;
+  grid-template-columns: 310px;
+  grid-template-rows: 340px 340px 340px 340px 340px 340px;
   grid-gap: 30px;
   margin-top: 50px;
 }
 
-footer {
+header {
   position: absolute;
-  margin-left: -765px;
+  margin-left: -85px;
   margin-bottom: 120px;
 }
 
@@ -90,10 +90,11 @@ a {
 .calendar {
   display: flex;
   align-items: center;
+  margin-top: 10px;
   padding-left: 10px;
   margin-right: 20px;
 }
-.calendar > p {
+.calendar > time {
   font-size: 10px;
   margin-bottom: 0px;
   padding-bottom: 0px;
@@ -107,7 +108,7 @@ a {
   margin-right: 20px;
   padding-top: 220px;
 }
-.calendar-item1 > p {
+.calendar-item1 > time {
   font-size: 10px;
   margin-bottom: 0px;
   padding-bottom: 0px;
@@ -137,7 +138,7 @@ a {
 }
 
 .icon {
-  margin-top: 10px;
+  margin-top: 5px;
   padding-bottom: 0px;
 }
 
@@ -150,26 +151,24 @@ a {
   padding-left: 10px;
 }
 
-@media (max-width: 1000px) {
+@media (min-width: 600px) {
   .container {
     grid-template-columns: 310px 310px;
     grid-template-rows: 340px 340px 340px 340px;
   }
-  footer {
-    position: absolute;
+  header {
     margin-left: -420px;
     margin-bottom: 120px;
   }
 }
 
-@media (max-width: 600px) {
+@media (min-width: 1000px) {
   .container {
-    grid-template-columns: 310px;
-    grid-template-rows: 340px 340px 340px 340px 340px 340px;
+    grid-template-columns: 310px 310px 310px;
+    grid-template-rows: 340px 340px;
   }
-  footer {
-    position: absolute;
-    margin-left: -85px;
+  header {
+    margin-left: -765px;
     margin-bottom: 120px;
   }
 }
