@@ -29,13 +29,10 @@ header {
 
 h2,
 p {
+  padding-bottom: 0px;
   padding: 10px;
   margin: 0px;
   line-height: 20px;
-}
-h2 {
-  font-size: 16px;
-  padding-bottom: 0px;
 }
 
 a {
@@ -69,16 +66,16 @@ a {
   color: black;
 }
 
-.item3 > p {
-  padding-bottom: 155px;
+.item3 > article {
+  padding-bottom: 145px;
 }
 
 .item4 {
   color: white;
   background-color: rgba(17, 38, 60, 255);
 }
-.item4 > p {
-  padding-bottom: 155px;
+.item4 > article {
+  padding-bottom: 145px;
 }
 
 .item5 > img {
@@ -106,7 +103,7 @@ a {
   align-items: center;
   padding-left: 10px;
   margin-right: 20px;
-  padding-top: 220px;
+  padding-top: 235px;
 }
 .calendar-item1 > time {
   font-size: 10px;
@@ -138,7 +135,7 @@ a {
 }
 
 .icon {
-  margin-top: 5px;
+  margin-top: 0px;
   padding-bottom: 0px;
 }
 
