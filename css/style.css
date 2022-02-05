@@ -24,15 +24,14 @@ footer {
   grid-gap: 30px;
   margin-top: 50px;
 }
+.item1 {
+  grid-row: 2 span;
+}
 
 .item1 > img {
   height: 100%;
   width: 100%;
   object-fit: cover;
-}
-
-.item1 {
-  grid-row: 2 span;
 }
 
 .item2 > img {
@@ -73,16 +72,16 @@ p {
   line-height: 20px;
 }
 
-.infoimage {
+.info-image-2-5 {
   position: absolute;
   background-color: rgba(69, 93, 119, 255);
   width: 310px;
-  height: 187px;
-  margin-top: -90px;
+  height: 197px;
+  margin-top: -100px;
   color: white;
 }
 a {
-  padding: 10px;
+  padding: 0px;
   margin: 0px;
   color: white;
   font-size: 10px;
@@ -90,19 +89,25 @@ a {
 .info-item1 {
   position: absolute;
   width: 310px;
-  height: 80px;
-  margin-top: -80px;
+  height: 297px;
+  margin-top: -300px;
   color: white;
+  background-image: linear-gradient(
+    to bottom,
+    rgba(255, 255, 255, 0),
+    rgb(1, 1, 1)
+  );
 }
+
 h2 {
   font-size: 16px;
   padding-bottom: 0px;
 }
 .item4 > p {
-  padding-bottom: 160px;
+  padding-bottom: 155px;
 }
 .item3 > p {
-  padding-bottom: 160px;
+  padding-bottom: 155px;
 }
 .calendar > p {
   font-size: 10px;
@@ -110,14 +115,39 @@ h2 {
   padding-bottom: 0px;
   padding-left: 5px;
 }
+
 .icon {
   margin-top: 10px;
   padding-bottom: 0px;
 }
-.item2 > a {
-  font-size: 16px;
-}
-.clipped {
+
+.clipped-img-2-5 {
   margin-top: -100px;
   clip-path: inset(100px 0px 0px 0px);
+}
+
+.a {
+  padding-left: 10px;
+}
+
+@media (max-width: 760px) {
+  .container {
+    grid-template-columns: 310px 310px;
+  }
+  footer {
+    position: absolute;
+    margin-left: -385px;
+    margin-bottom: 120px;
+  }
+}
+
+@media (max-width: 600px) {
+  .container {
+    grid-template-columns: 310px;
+  }
+  footer {
+    position: absolute;
+    margin-left: -85px;
+    margin-bottom: 120px;
+  }
 }
