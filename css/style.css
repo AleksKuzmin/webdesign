@@ -16,15 +16,9 @@ body {
 .container {
   display: grid;
   grid-template-columns: 310px;
-  grid-template-rows: 340px 340px 340px 340px 340px 340px;
+  grid-template-rows: 15px 340px 340px 340px 340px 340px 340px;
   grid-gap: 30px;
   margin-top: 50px;
-}
-
-header {
-  position: absolute;
-  margin-left: -85px;
-  margin-bottom: 120px;
 }
 
 h2,
@@ -67,7 +61,7 @@ a {
 }
 
 .item3 > article {
-  padding-bottom: 145px;
+  padding-bottom: 143px;
 }
 
 .item4 {
@@ -75,7 +69,7 @@ a {
   background-color: rgba(17, 38, 60, 255);
 }
 .item4 > article {
-  padding-bottom: 145px;
+  padding-bottom: 143px;
 }
 
 .item5 > img {
@@ -149,23 +143,60 @@ a {
 }
 
 @media (min-width: 600px) {
+  .header {
+    grid-area: header;
+  }
+  .item1 {
+    grid-area: item1;
+  }
+  .item2 {
+    grid-area: item2;
+  }
+  .item3 {
+    grid-area: item3;
+  }
+  .item4 {
+    grid-area: item4;
+  }
+  .item5 {
+    grid-area: item5;
+  }
   .container {
     grid-template-columns: 310px 310px;
-    grid-template-rows: 340px 340px 340px 340px;
-  }
-  header {
-    margin-left: -420px;
-    margin-bottom: 120px;
+    grid-template-rows: 15px 340px 340px 340px;
+    grid-template-areas:
+      "header header"
+      "item1 item2"
+      "item1 item3"
+      "item4 item5";
   }
 }
 
 @media (min-width: 1000px) {
+  .header {
+    grid-area: header;
+  }
+  .item1 {
+    grid-area: item1;
+  }
+  .item2 {
+    grid-area: item2;
+  }
+  .item3 {
+    grid-area: item3;
+  }
+  .item4 {
+    grid-area: item4;
+  }
+  .item5 {
+    grid-area: item5;
+  }
   .container {
     grid-template-columns: 310px 310px 310px;
-    grid-template-rows: 340px 340px;
-  }
-  header {
-    margin-left: -765px;
-    margin-bottom: 120px;
+    grid-template-rows: 15px 340px 340px;
+    grid-template-areas:
+      "header header header"
+      "item1 item2 item3"
+      "item1 item4 item5";
   }
 }
