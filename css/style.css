@@ -38,6 +38,10 @@ a {
 
 .item1 {
   grid-row: 2 span;
+  position: relative;
+}
+.item2 {
+  position: relative;
 }
 
 .item1 > img {
@@ -77,6 +81,9 @@ a {
   width: 100%;
   object-fit: cover;
 }
+.item5 {
+  position: relative;
+}
 
 .calendar {
   display: flex;
@@ -111,7 +118,7 @@ a {
   background-color: rgba(69, 93, 119, 255);
   width: 310px;
   height: 197px;
-  margin-top: -100px;
+  bottom: 0px;
   color: white;
 }
 
@@ -119,7 +126,7 @@ a {
   position: absolute;
   width: 310px;
   height: 297px;
-  margin-top: -300px;
+  top: 413px;
   color: white;
   background-image: linear-gradient(
     to bottom,
@@ -134,7 +141,8 @@ a {
 }
 
 .clipped-img-2-5 {
-  margin-top: -100px;
+  top: -100px;
+  position: absolute;
   clip-path: inset(100px 0px 0px 0px);
 }
 
